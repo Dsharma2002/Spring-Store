@@ -1,5 +1,8 @@
 package com.example.Spring_Store;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PaypalPaymentService implements PaymentService {
 
     @Override
