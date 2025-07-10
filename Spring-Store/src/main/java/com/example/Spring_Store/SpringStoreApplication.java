@@ -7,7 +7,8 @@ public class SpringStoreApplication {
 
     public static void main(String[] args) {
         // SpringApplication.run(SpringStoreApplication.class, args);
-        var OrderService = new OrderService(new PaypalPaymentService());
+        var OrderService = new OrderService();
+        OrderService.setPaymentService(new PaypalPaymentService());
         OrderService.placeOrder();
     }
 
